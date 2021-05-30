@@ -12,6 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.proximus.backend.proximusBackend.model.Canal;
 import com.proximus.backend.proximusBackend.service.CanalService;
 
+/**
+ * 
+ * @author Marwa Essahli
+ *
+ */
 @RestController
 @RequestMapping("/proximus/canal")
 public class CanalController {

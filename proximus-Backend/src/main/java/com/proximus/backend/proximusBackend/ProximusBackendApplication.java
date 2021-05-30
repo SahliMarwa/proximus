@@ -7,6 +7,11 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+/**
+ * 
+ * @author Marwa Essahli
+ *
+ */
 @SpringBootApplication
 @ComponentScan(basePackages = {
         "com.proximus.backend.proximusBackend.controller",
@@ -19,6 +24,11 @@ public class ProximusBackendApplication {
 		SpringApplication.run(ProximusBackendApplication.class, args);
 	}
 	
+	/**
+	 * Object Mapper.
+	 * 
+	 * @return the object mapper
+	 */
 	 @Bean
 	    public ObjectMapper objectMapper() {
 		    ObjectMapper objectMapper = new ObjectMapper();

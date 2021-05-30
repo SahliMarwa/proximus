@@ -13,13 +13,22 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.proximus.backend.proximusBackend.model.Canal;
 
+/**
+ * 
+ * @author Marwa Essahli
+ *
+ */
 @Service
 public class CanalServiceImpl implements CanalService {
 
 	@Autowired
 	ObjectMapper objectMapper;
 	
-	
+	/**
+	 * Gets all canals.
+	 * 
+	 * @return the list of canal
+	 */
 	@Override
 	public List<Canal> getAllCanals() {
 		List<Canal>  canalList= new ArrayList<Canal>();
@@ -38,6 +47,12 @@ public class CanalServiceImpl implements CanalService {
 		return canalList;
 	}
 
+/**
+	 * Validate canal.
+	 * 
+	 * @param canal the canal
+	 * @return the canal
+	 */
 	@Override
 	public Canal validateCanal(Canal canal) {
 		// TODO Auto-generated method stub
@@ -45,6 +60,12 @@ public class CanalServiceImpl implements CanalService {
 		return canal;
 	}
 
+/**
+	 * Invalidate canal.
+	 * 
+	 * @param canal the canal
+	 * @return the canal
+	 */
 	@Override
 	public Canal inValidateCanal(Canal canal) {
 		// TODO Auto-generated method stub

@@ -18,6 +18,11 @@ import org.springframework.test.web.servlet.MockMvc;
 import com.proximus.backend.proximusBackend.model.Canal;
 import com.proximus.backend.proximusBackend.service.CanalService;
 
+/**
+ * 
+ * @author Marwa Essahli
+ *
+ */
 @SpringBootTest
 class ProximusBackendApplicationTests {
 
@@ -30,7 +35,9 @@ class ProximusBackendApplicationTests {
 	
 	private List<Canal> canals =  new ArrayList<Canal>();
 	
-
+   /**
+	 * Initialization.
+	 */
 	@BeforeEach
 	void init() {
 		Canal canal1 = new Canal(1L, "Canal+ films", false);
@@ -38,13 +45,19 @@ class ProximusBackendApplicationTests {
         canals.add(canal1);
         canals.add(canal2);	
 	}
-	
+
+	/**
+	 * Gets size of list of canals test.
+	 */
 	@Test
 	void getSizeOfListCanalsGTest() {
        when(canalService.getAllCanals()).thenReturn(canals);
        assertEquals(canalService.getAllCanals().size(),2);
 	}
-	
+
+	/**
+	 * Validate canal test.
+	 */
 	@Test
 	void validateCanalTest() {
 	   canals.get(0).setAvailability(true);
@@ -55,6 +68,9 @@ class ProximusBackendApplicationTests {
 
 	}
 	
+	/**
+	 * Invalidate canal test.
+	 */
 	@Test
 	void disValidateCanalTest() {
 	   canals.get(1).setAvailability(false);
