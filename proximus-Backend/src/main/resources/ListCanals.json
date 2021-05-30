@@ -1,0 +1,47 @@
+[
+  {
+    "id": 50,
+    "name": "HD Pickx+",
+    "availability": false
+  },
+  {
+    "id": 51,
+    "name": "HD Be1",
+    "availability": false
+  },
+  {
+    "id": 52,
+    "name": "HD Be Séries",
+    "availability": false
+  },
+  {
+    "id": 53,
+    "name": "HD Be Ciné",
+    "availability": false
+  },
+  {
+    "id": 54,
+    "name": "HD Ciné+ Premier",
+    "availability": true
+  },
+  {
+    "id": 56,
+    "name": "HD Ciné+ Classic",
+    "availability": true
+  },
+  {
+    "id": 57,
+    "name": "Netflix N",
+    "availability": false
+  },
+  {
+    "id": 60,
+    "name": "HD Action",
+    "availability": false
+  },
+  {
+    "id": 61,
+    "name": "HD TV Breizh",
+    "availability": false
+  }
+  ]
